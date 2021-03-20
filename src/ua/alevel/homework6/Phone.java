@@ -1,7 +1,7 @@
 package ua.alevel.homework6;
 
 public class Phone {
-    public int number;
+    public static int number;
     public String model;
     public int weight;
 
@@ -9,8 +9,8 @@ public class Phone {
         System.out.println("Вам звонит " + name);
     }
 
-    public static int getNumber(int number) {
-        return number;
+    public static int getNumber() {
+        return Phone.number;
     }
 
     public Phone(int number, String model, int weight){
